@@ -1,0 +1,43 @@
+// Лабораторная работа №1. Средний уровень. Вариант 7
+// Остаток от деления
+
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "RU"); //Функция для отображения кириллицы
+	
+	//Объявление переменных
+	int num1 = 0;
+	int num2 = 0;
+	int num3 = 0;
+	float res = 0;
+
+	std::cout << "Введите первую оценку: ";
+	std::cin >> num1;
+	while (std::cin.fail() || num1 < 2 || num1 > 5) { //Цикл с проверкой на корректный ввод
+		std::cout << "Ошибка ввода! Введите оценку: "; //Предупреждение об ошибке
+		std::cin.clear();	//Сброс флага ошибки
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  //Выбрасываем содержание из буфера
+		std::cin >> num1;
+	}
+
+	std::cout << "Введите вторую оценку: ";
+	std::cin >> num2;
+	while (std::cin.fail() || num2 < 2 || num2 > 5) { //Цикл с проверкой на корректный ввод
+		std::cout << "Ошибка ввода! Введите оценку: "; //Предупреждение об ошибке
+		std::cin.clear();	//Сброс флага ошибки
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  //Выбрасываем содержание из буфера
+		std::cin >> num2;
+	}
+
+	std::cout << "Введите третью оценку: ";
+	std::cin >> num3;
+	while (std::cin.fail() || num3 < 2 || num3 > 5) { //Цикл с проверкой на корректный ввод
+		std::cout << "Ошибка ввода! Введите оценку: "; //Предупреждение об ошибке
+		std::cin.clear();	//Сброс флага ошибки
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  //Выбрасываем содержание из буфера
+		std::cin >> num3;
+	}
+	res = (num1 + num2 + num3) / 3.0; //Вычисление результата
+	std::cout << res; //Вывод результата
+}
