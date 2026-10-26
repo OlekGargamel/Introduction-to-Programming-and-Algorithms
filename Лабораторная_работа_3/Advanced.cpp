@@ -19,10 +19,10 @@ int main() {
 	cout << "Введите номер месяца, в который вы родились: ";
 	cin >> month;
 	while (std::cin.fail() || month <= 0 || month >= 13) {  //Цикл с проверкой на корректный ввод
-		std::cout << "Ошибка ввода! Введите номер месяца: ";  //Предупреждение об ошибке
-		std::cin.clear(); //Сброс флага ошибки
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
-		std::cin >> month;
+		cout << "Ошибка ввода! Введите номер месяца: ";  //Предупреждение об ошибке
+		cin.clear(); //Сброс флага ошибки
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+		cin >> month;
 	}
 	
 	//Условие проверки месяца
@@ -31,10 +31,10 @@ int main() {
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
 		while (std::cin.fail() || not(day >= 1 && day <= 31)) {  //Цикл с проверкой на корректный ввод
-			std::cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
-			std::cin.clear(); //Сброс флага ошибки
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
-			std::cin >> day;
+			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
+			cin.clear(); //Сброс флага ошибки
+			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin >> day;
 		}
 	}
 	else if (month == 2) {
@@ -42,10 +42,10 @@ int main() {
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
 		while (std::cin.fail() || not(day >= 1 && day <= 29)) {  //Цикл с проверкой на корректный ввод
-			std::cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
-			std::cin.clear(); //Сброс флага ошибки
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
-			std::cin >> day;
+			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
+			cin.clear(); //Сброс флага ошибки
+			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin >> day;
 		}
 	}
 	else {
@@ -53,10 +53,10 @@ int main() {
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
 		while (std::cin.fail() || not(day >= 1 && day <= 30)) {  //Цикл с проверкой на корректный ввод
-			std::cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
-			std::cin.clear(); //Сброс флага ошибки
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
-			std::cin >> day;
+			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
+			cin.clear(); //Сброс флага ошибки
+			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin >> day;
 		}
 	}
 	
