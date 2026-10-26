@@ -17,7 +17,7 @@ int main() {
 	while (cin.fail() || a <= 0) {  //Цикл с проверкой на корректный ввод
 		cout << "Ошибка ввода! Введите число больше нуля: ";  //Предупреждение об ошибке
 		cin.clear(); //Сброс флага ошибки
-		cin.ignorenumeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+		cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
 		cin >> a;
 	}
 
