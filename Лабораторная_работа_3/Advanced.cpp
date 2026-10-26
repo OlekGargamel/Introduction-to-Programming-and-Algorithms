@@ -18,10 +18,10 @@ int main() {
 	//Ввод месяца
 	cout << "Введите номер месяца, в который вы родились: ";
 	cin >> month;
-	while (std::cin.fail() || month <= 0 || month >= 13) {  //Цикл с проверкой на корректный ввод
+	while (cin.fail() || month <= 0 || month >= 13) {  //Цикл с проверкой на корректный ввод
 		cout << "Ошибка ввода! Введите номер месяца: ";  //Предупреждение об ошибке
 		cin.clear(); //Сброс флага ошибки
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+		cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
 		cin >> month;
 	}
 	
@@ -30,10 +30,10 @@ int main() {
 		//Ввод дня
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
-		while (std::cin.fail() || not(day >= 1 && day <= 31)) {  //Цикл с проверкой на корректный ввод
+		while (cin.fail() || not(day >= 1 && day <= 31)) {  //Цикл с проверкой на корректный ввод
 			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
 			cin.clear(); //Сброс флага ошибки
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
 			cin >> day;
 		}
 	}
@@ -41,10 +41,10 @@ int main() {
 		//Ввод дня
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
-		while (std::cin.fail() || not(day >= 1 && day <= 29)) {  //Цикл с проверкой на корректный ввод
+		while (cin.fail() || not(day >= 1 && day <= 29)) {  //Цикл с проверкой на корректный ввод
 			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
 			cin.clear(); //Сброс флага ошибки
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
 			cin >> day;
 		}
 	}
@@ -52,10 +52,10 @@ int main() {
 		//Ввод дня
 		cout << "Введите день, в который вы родились: ";
 		cin >> day;
-		while (std::cin.fail() || not(day >= 1 && day <= 30)) {  //Цикл с проверкой на корректный ввод
+		while (cin.fail() || not(day >= 1 && day <= 30)) {  //Цикл с проверкой на корректный ввод
 			cout << "Ошибка ввода! Введите день: ";  //Предупреждение об ошибке
 			cin.clear(); //Сброс флага ошибки
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Выбрасываем содержание из буфера
 			cin >> day;
 		}
 	}
